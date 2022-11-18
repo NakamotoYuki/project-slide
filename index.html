@@ -14721,8 +14721,8 @@ So, We don't have a time for trading like a professional trader.</p>
 The price is changing every second,
 some people feel very nervous.</p>
 <p><strong>Difficulty</strong></p>
-<p>Professional trader has a special perspectives.
-But non-professional trader don't have special perspectives.</p>
+<p>Professional trader has a high skills and experiments.
+But usually non-professional trader don't have such kind of skills and experiments.</p>
 
 </div>
 </div>
@@ -14765,6 +14765,35 @@ But non-professional trader don't have special perspectives.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="My-Algorithmic-Trading-Strategy">My Algorithmic Trading Strategy<a class="anchor-link" href="#My-Algorithmic-Trading-Strategy">&#182;</a></h2><p style="font-size: 150%;"><a href="https://github.com/richmanbtc/mlbot_tutorial/blob/master/work/tutorial.ipynb">ML Bot</a></p>
+<p style="font-size: 150%;">Predict the trade return</p>
+
+</div>
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>In usual case machine learning is use to predict price.</p>
+<p>However my strategy predict the return.</p>
+<p>My strategy base on this page.</p>
+
+</div>
+</div>
+</div>
+</div>
+</aside></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Preparing">Preparing<a class="anchor-link" href="#Preparing">&#182;</a></h1><p style = "font-size: 150%;"><span style = "font-size: 150%; font-weight: bold;">Price Data :</span> OHLC(Open High Low Close)</p>
 <br>
 Example:
@@ -14774,12 +14803,26 @@ Example:
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><aside class="notes">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>For the project I'll gather price data from these pages.</p>
+
+</div>
+</div>
+</div>
+</div>
+</aside></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14800,7 +14843,7 @@ Example:
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 
 
 
@@ -14898,59 +14941,11 @@ Example:
 <p style = "font-size: 150%;"><span style = "font-size: 150%; font-weight: bold;">Technical indicator Data :</span> MACD RSI ICHIMOKU....</p>
 <p>Libraries:</p>
 <p><a href="https://technical-analysis-library-in-python.readthedocs.io/en/latest/">Technical Analysis Library in Python</a></p>
+<p><a href="https://nakamotoyuki.github.io/project-slide/plot.html">sample graph</a></p>
 
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">IPython</span> 
-
-<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="s2">"https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html"</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="s2">"100%"</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="s2">"100%"</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-
-        <iframe
-            width="100%"
-            height="100%"
-            src="https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html"
-            frameborder="0"
-            allowfullscreen
-            
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><aside class="notes">
 
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -14970,23 +14965,7 @@ Example:
 </div>
 </div>
 </div>
-</aside><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div></section></section>
+</aside></section></section>
 </div>
 </div>
 </body>
